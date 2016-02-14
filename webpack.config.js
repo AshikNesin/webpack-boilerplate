@@ -5,7 +5,11 @@ module.exports = {
     entry: {
         main: [
             './app/js/msg.js',
-            './app/js/main.js'
+            './app/js/main.js',
+
+        ],
+        jade: [
+            './app/index.jade'
         ]
     },
     output: {
@@ -36,9 +40,28 @@ module.exports = {
                 test: /\.scss$/,
                 include: path.join(__dirname, 'app'),
                 loader: 'style!css!sass'
+            },
+
+            // Jade
+            {
+                test: /\.jade$/,
+                include: path.join(__dirname, 'app'),
+                loader: "jade-html"
             }
+
+            // Images
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=8192' // inlining images if they are equal or under 8kb.
+            }
+
 
         ]
     }
+
+    // resolve: {
+    //     // you can now require('file') instead of require('file.coffee')
+    //     extensions: ['', '.js', '.sass', '.coffee']
+    // }
 
 };
