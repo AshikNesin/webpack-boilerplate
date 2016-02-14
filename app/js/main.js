@@ -7,3 +7,8 @@ let pi = () => 3.1415;
 console.log(square(5));
 console.log(add(3, 4));
 console.log(pi());
+
+var animal = 'cow';
+var sound = 'moo';
+ 
+alert(`The animal is ${animal} and its sound is ${sound}`);
