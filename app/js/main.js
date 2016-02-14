@@ -1,3 +1,4 @@
+require('../css/main.scss');
 var msg = require('./msg.js');
 document.write(msg);
 let square = x => x * x;
@@ -8,4 +9,4 @@ console.log(add(3, 4));
 console.log(pi());
 // debugger;
 var name='Ashik'; 
-alert(`Hey There.. I'm ${name}`);
+document.write(`Hey There.. I'm ${name}`);

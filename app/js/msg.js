@@ -1,1 +1,1 @@
-module.exports = 'Hey from module 1';
+module.exports = 'Hey from Message Module';
