@@ -1,4 +1,5 @@
 module.exports = {
+    devtool:'eval-source-map',
     entry: {
         main: ['./app/js/msg.js', './app/js/main.js']
     },
